@@ -16,14 +16,14 @@
  */
 
 const ANGGOTA = [
-  { nama: 'Sityama Munawar Dewi', subtopik: 'Definisi & Ruang Lingkup' },
+  { nama: 'Sityama Munawar Dewi', subtopik: 'Fisheries & Aquaculture' },
   { nama: 'Rini Mulia Sari', subtopik: 'Maritime Civilization' },
-  { nama: 'Muh. Rafly Dwi Putra', subtopik: 'Human Resources Kemaritiman' },
-  { nama: 'Nurul Maghfirah Miftahul Jannah', subtopik: 'Coastal Communities' },
-  { nama: 'Widi Darmadiatmika Tanaya', subtopik: 'Fisheries & Aquaculture' },
-  { nama: 'Made Adya Febriana Putri', subtopik: 'Maritime Tourism' },
+  { nama: 'Muh. Rafly Dwi Putra', subtopik: 'Maritime Tourism' },
+  { nama: 'Nurul Maghfirah Miftahul Jannah', subtopik: 'Definisi & Ruang Lingkup' },
+  { nama: 'Widi Darmadiatmika Tanaya', subtopik: 'Blue Economy Indonesia' },
+  { nama: 'Made Adya Febriana Putri', subtopik: 'Human Resources Kemaritiman' },
   { nama: 'Gusti Putu Yuda Wirashana', subtopik: 'Shipping, Logistics & Shipbuilding' },
-  { nama: 'Amanah Asri Estikawati', subtopik: 'Blue Economy Indonesia' },
+  { nama: 'Amanah Asri Estikawati', subtopik: 'Coastal Communities' },
 ];
 
 // Ilustrasi editorial buatan khusus untuk tiap subtopik. Digunakan sebagai
@@ -110,13 +110,13 @@ const SLIDES = [
     members: ANGGOTA,
   },
 
-  // 1. Sityama Munawar Dewi
+  // 1. Nurul Maghfirah Miftahul Jannah
   {
     type: 'concept',
     visual: VISUALS.economy,
     index: 1,
     section: 'Definisi & Ruang Lingkup',
-    presenter: 'Sityama Munawar Dewi',
+    presenter: 'Nurul Maghfirah Miftahul Jannah',
     title: 'Apa itu Maritime Economy',
     definition:
       'Seluruh aktivitas ekonomi yang terjadi di kawasan perairan maupun di luar kawasan perairan, yang memanfaatkan sumber daya alam dan lingkungan yang berasal dari perairan, termasuk wilayah pesisir dan pulau-pulau kecil.',
@@ -133,7 +133,7 @@ const SLIDES = [
     visual: VISUALS.economy,
     index: 1,
     section: 'Definisi & Ruang Lingkup',
-    presenter: 'Sityama Munawar Dewi',
+    presenter: 'Nurul Maghfirah Miftahul Jannah',
     title: 'Skala dan Praktiknya',
     stat: { value: '2,59%', label: 'Kontribusi PDB perikanan, triwulan IV 2024' },
     statNote:
@@ -183,13 +183,13 @@ const SLIDES = [
     ],
   },
 
-  // 3. Muh. Rafly Dwi Putra
+  // 3. Made Adya Febriana Putri
   {
     type: 'concept',
     visual: VISUALS.humanResources,
     index: 3,
     section: 'Human Resources Kemaritiman',
-    presenter: 'Muh. Rafly Dwi Putra',
+    presenter: 'Made Adya Febriana Putri',
     title: 'Manusia di Balik Sektor Maritim',
     definition:
       'Mencakup nelayan, pembudidaya, awak kapal, pekerja pelabuhan, pengolah hasil laut, sampai tenaga industri perkapalan. Kualitas SDM menentukan produktivitas, keselamatan kerja, dan nilai tambah sektor.',
@@ -206,7 +206,7 @@ const SLIDES = [
     visual: VISUALS.humanResources,
     index: 3,
     section: 'Human Resources Kemaritiman',
-    presenter: 'Muh. Rafly Dwi Putra',
+    presenter: 'Made Adya Febriana Putri',
     title: 'Kondisi Kerja dan Pelatihan',
     stat: { value: '3.396', label: 'Pekerja kapal perikanan disurvei ILO-BRIN di 18 pelabuhan' },
     caseTitle: 'Praktik di Indonesia',
@@ -219,7 +219,7 @@ const SLIDES = [
     ],
   },
 
-  // 4. Nurul Maghfirah Miftahul Jannah
+  // 4. Amanah Asri Estikawati
   // Sumber diperbarui ke jurnal <=10 tahun per rule dosen, lihat
   // materi-narasi-jurnal-buku/04-coastal-communities.md untuk narasi penuh.
   // Ferrol-Schulte dkk. (2015) dan Akhirman (2020) sengaja tidak dipakai,
@@ -229,7 +229,7 @@ const SLIDES = [
     visual: VISUALS.coastal,
     index: 4,
     section: 'Coastal Communities',
-    presenter: 'Nurul Maghfirah Miftahul Jannah',
+    presenter: 'Amanah Asri Estikawati',
     title: 'Ekonomi Masyarakat Pesisir',
     definition:
       'Komunitas yang kehidupan sosial-ekonominya terikat erat pada sumber daya pesisir dan laut — bukan cuma nelayan, tapi juga pembudidaya, pengolah hasil laut, pedagang, dan pelaku wisata. Kedekatan dengan laut tidak otomatis berarti sejahtera; akses ke modal, teknologi, pasar, dan infrastruktur yang menentukan.',
@@ -248,7 +248,7 @@ const SLIDES = [
     visual: VISUALS.coastal,
     index: 4,
     section: 'Coastal Communities',
-    presenter: 'Nurul Maghfirah Miftahul Jannah',
+    presenter: 'Amanah Asri Estikawati',
     title: 'Subjek, Bukan Objek Pembangunan',
     stat: { value: '5 desa', label: 'Desa pesisir yang diteliti soal ketahanan lewat diversifikasi ke wisata bahari saat pandemi' },
     statNote: 'Di Pantai Semawang, Sanur, warga lokal berperan langsung dalam perencanaan dan pengelolaan wisata bahari, bukan cuma jadi penerima program.',
@@ -262,13 +262,13 @@ const SLIDES = [
     ],
   },
 
-  // 5. Widi Darmadiatmika Tanaya
+  // 5. Sityama Munawar Dewi
   {
     type: 'concept',
     visual: VISUALS.fisheries,
     index: 5,
     section: 'Fisheries & Aquaculture',
-    presenter: 'Widi Darmadiatmika Tanaya',
+    presenter: 'Sityama Munawar Dewi',
     title: 'Perikanan Tangkap dan Budidaya',
     definition:
       'Perikanan tangkap menangkap ikan di laut dan perairan umum. Budidaya (akuakultur) mengembangbiakkan organisme air meniru habitat aslinya. Keduanya menopang pangan, kerja, dan ekspor.',
@@ -285,7 +285,7 @@ const SLIDES = [
     visual: VISUALS.fisheries,
     index: 5,
     section: 'Fisheries & Aquaculture',
-    presenter: 'Widi Darmadiatmika Tanaya',
+    presenter: 'Sityama Munawar Dewi',
     title: 'Produksi dan Diversifikasi',
     stat: { value: '6,37 juta ton', label: 'Produksi ikan budidaya 2024, naik 13,64% dari tahun sebelumnya' },
     statNote: 'Produksi rumput laut pada periode yang sama mencapai 10,80 juta ton.',
@@ -299,7 +299,7 @@ const SLIDES = [
     ],
   },
 
-  // 6. Made Adya Febriana Putri
+  // 6. Muh. Rafly Dwi Putra
   // Sumber diperbarui ke jurnal <=10 tahun per rule dosen, lihat
   // materi-narasi-jurnal-buku/06-maritime-tourism.md untuk narasi penuh.
   {
@@ -307,7 +307,7 @@ const SLIDES = [
     visual: VISUALS.tourism,
     index: 6,
     section: 'Maritime Tourism',
-    presenter: 'Made Adya Febriana Putri',
+    presenter: 'Muh. Rafly Dwi Putra',
     title: 'Wisata Bahari, Nilai yang Belum Utuh',
     definition:
       'Seluruh aktivitas rekreasi pada media laut dan pesisir yang nilainya terbentuk lewat rantai jasa: transportasi, akomodasi, pemandu, dan konservasi. Indikator kinerjanya masih dominan kunjungan dan belanja wisatawan, sementara emisi karbon, limbah laut, dan tekanan ekosistem jarang terukur.',
@@ -326,7 +326,7 @@ const SLIDES = [
     visual: VISUALS.tourism,
     index: 6,
     section: 'Maritime Tourism',
-    presenter: 'Made Adya Febriana Putri',
+    presenter: 'Muh. Rafly Dwi Putra',
     title: 'Modal Sosial di Balik Mandeh',
     stat: { value: '2 juta', label: 'Wisatawan per tahun ke Kawasan Wisata Bahari Terpadu Mandeh, Sumatra Barat, sejak 2016' },
     statNote:
@@ -384,7 +384,7 @@ const SLIDES = [
     ],
   },
 
-  // 8. Amanah Asri Estikawati
+  // 8. Widi Darmadiatmika Tanaya
   // Sumber diperbarui ke jurnal/buku <=10 tahun per rule dosen, lihat
   // materi-narasi-jurnal-buku/08-blue-economy-indonesia.md untuk narasi penuh.
   // Hamid dkk. (2026) sengaja tidak dipakai di sini: belum ketemu URL/DOI
@@ -394,7 +394,7 @@ const SLIDES = [
     visual: VISUALS.blueEconomy,
     index: 8,
     section: 'Blue Economy Indonesia',
-    presenter: 'Amanah Asri Estikawati',
+    presenter: 'Widi Darmadiatmika Tanaya',
     title: 'Arah Ekonomi Biru Indonesia',
     definition:
       'Model ekonomi yang memakai kekayaan maritim untuk kesejahteraan masyarakat tanpa mengorbankan keseimbangan ekosistem laut, dibangun di atas prinsip efisiensi sumber daya, nihil limbah, inklusi sosial, dan produksi melingkar.',
@@ -414,7 +414,7 @@ const SLIDES = [
     visual: VISUALS.blueEconomy,
     index: 8,
     section: 'Blue Economy Indonesia',
-    presenter: 'Amanah Asri Estikawati',
+    presenter: 'Widi Darmadiatmika Tanaya',
     title: 'Diversifikasi yang Menaikkan Pendapatan',
     stat: { value: '20-30%', label: 'Kenaikan pendapatan nelayan lewat diversifikasi usaha ala blue economy' },
     statNote: 'Diversifikasi mencakup budidaya, ekowisata, dan bioenergi dari rumput laut.',
