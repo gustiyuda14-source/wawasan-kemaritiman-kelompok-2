@@ -184,6 +184,10 @@ const SLIDES = [
   },
 
   // 3. Made Adya Febriana Putri
+  // Sumber diperbarui ke jurnal <=10 tahun per rule dosen, lihat
+  // materi-narasi-jurnal-buku/03-human-resources-kemaritiman.md untuk narasi
+  // penuh. Renstra BPPSDM KP 2025-2029 sengaja tidak dipakai (dokumen
+  // pemerintah, bukan jurnal/buku) -- lihat catatan pemakaian di file itu.
   {
     type: 'concept',
     visual: VISUALS.humanResources,
@@ -192,14 +196,16 @@ const SLIDES = [
     presenter: 'Made Adya Febriana Putri',
     title: 'Manusia di Balik Sektor Maritim',
     definition:
-      'Mencakup nelayan, pembudidaya, awak kapal, pekerja pelabuhan, pengolah hasil laut, sampai tenaga industri perkapalan. Kualitas SDM menentukan produktivitas, keselamatan kerja, dan nilai tambah sektor.',
+      'Individu dengan pengetahuan, keterampilan, dan kompetensi sesuai kebutuhan bidang kemaritiman. Digitalisasi pelayaran dan logistik menuntut literasi digital, analisis data, dan pengambilan keputusan berbasis teknologi, bukan cuma kemampuan teknis.',
     keyPoints: [
-      'Kebijakan nasional menyasar SDM kelautan yang profesional, beretika, berdedikasi',
-      'Kompetensi teknis perlu disertai sertifikasi keselamatan dan mutu',
-      'Pendidikan vokasi dan literasi keuangan memperkuat usaha pesisir',
-      'Pekerjaan layak menuntut kontrak kerja dan perlindungan awak kapal',
+      'Digitalisasi pelayaran menuntut literasi digital, bukan cuma keterampilan teknis',
+      'Pengembangan SDM perlu berkelanjutan lewat pendidikan dan pelatihan',
+      'Pekerjaan layak butuh kontrak jelas dan perlindungan awak kapal',
+      'Awak kapal berstatus buruh migran rentan tanpa pengawasan memadai',
     ],
-    citations: [BUKU.bab3],
+    citations: [
+      { short: 'Utami & Pambudi (2024)', text: 'Utami & Pambudi, Perencanaan Serta Pengembangan Sumber Daya Manusia Dalam Inovasi Pendidikan Kemaritiman, Majalah Ilmiah Bahari Jogja, 2024', url: 'https://doi.org/10.33489/mibj.v22i1.347' },
+    ],
   },
   {
     type: 'evidence',
@@ -207,15 +213,15 @@ const SLIDES = [
     index: 3,
     section: 'Human Resources Kemaritiman',
     presenter: 'Made Adya Febriana Putri',
-    title: 'Kondisi Kerja dan Pelatihan',
-    stat: { value: '3.396', label: 'Pekerja kapal perikanan disurvei ILO-BRIN di 18 pelabuhan' },
+    title: 'Kontrak Jelas untuk Awak Kapal',
+    stat: { value: 'Status Ganda', label: 'Awak kapal Indonesia kerap berstatus buruh migran, bukan sekadar pekerja pelayaran biasa' },
+    statNote: 'Ketidakjelasan perjanjian kerja dan lemahnya pengawasan jadi celah utama pelanggaran hak.',
     caseTitle: 'Praktik di Indonesia',
     caseBody:
-      'Pelatihan KKP diikuti 39.057 peserta sepanjang 2024. Pendidikan vokasi dan sertifikasi diarahkan memperbesar akses anak nelayan dan pembudidaya ke dunia usaha dan industri.',
+      'Awak kapal migran menghadapi persoalan perlindungan hukum dan kesejahteraan, terutama soal ketidakjelasan perjanjian kerja, pelanggaran hak, dan lemahnya pengawasan. Perjanjian kerja yang jelas, transparan, dan adil jadi instrumen penting memastikan hak dan kewajiban awak kapal maupun perusahaan pelayaran.',
     citations: [
-      { text: 'ILO dan BRIN, Memahami Kondisi Kerja Pekerja Kapal Penangkap Ikan di Indonesia, 2025', url: 'https://www.ilo.org/id/publications/memahami-kondisi-kerja-pekerja-kapal-penangkap-ikan-di-indonesia-bukti-dari' },
-      { text: 'ILO, Stocktaking Study: Indonesia Seafaring, 2023', url: 'https://www.ilo.org/publications/stocktaking-study-development-sectoral-skills-strategy-indonesia-seafaring' },
-      { text: 'KKP, Pendidikan Tinggi Vokasi Tingkatkan Kompetensi SDM Perikanan, 2025', url: 'https://kkp.go.id/news/news-detail/kkp-maksimalkan-pendidikan-tinggi-vokasi-tingkatkan-kompetensi-sdm-perikanan-z6PZ.html' },
+      { text: 'Kwartama dkk., Hukum Perlindungan dan Perjanjian Awak Kapal dalam Kontrak Kerja dalam Status Buruh Migran, Jurnal Nalar Keadilan, 2025', url: 'https://jurnal.universitasjakarta.ac.id/index.php/jurnal-fh-unija/article/view/125' },
+      { text: 'Utami & Pambudi, Perencanaan Serta Pengembangan Sumber Daya Manusia Dalam Inovasi Pendidikan Kemaritiman, Majalah Ilmiah Bahari Jogja, 2024', url: 'https://doi.org/10.33489/mibj.v22i1.347' },
     ],
   },
 
