@@ -220,6 +220,10 @@ const SLIDES = [
   },
 
   // 4. Nurul Maghfirah Miftahul Jannah
+  // Sumber diperbarui ke jurnal <=10 tahun per rule dosen, lihat
+  // materi-narasi-jurnal-buku/04-coastal-communities.md untuk narasi penuh.
+  // Ferrol-Schulte dkk. (2015) dan Akhirman (2020) sengaja tidak dipakai,
+  // lihat catatan pemakaian di file itu.
   {
     type: 'concept',
     visual: VISUALS.coastal,
@@ -228,14 +232,16 @@ const SLIDES = [
     presenter: 'Nurul Maghfirah Miftahul Jannah',
     title: 'Ekonomi Masyarakat Pesisir',
     definition:
-      'Komunitas yang kehidupan sosial dan ekonominya terikat erat pada sumber daya pesisir dan laut. Mata pencahariannya meliputi penangkapan ikan, budidaya, pengolahan, garam, wisata, dan jasa transportasi lokal.',
+      'Komunitas yang kehidupan sosial-ekonominya terikat erat pada sumber daya pesisir dan laut — bukan cuma nelayan, tapi juga pembudidaya, pengolah hasil laut, pedagang, dan pelaku wisata. Kedekatan dengan laut tidak otomatis berarti sejahtera; akses ke modal, teknologi, pasar, dan infrastruktur yang menentukan.',
     keyPoints: [
-      'Ekonomi pesisir didominasi usaha mikro-kecil yang rentan musim',
-      'Kebijakan nasional menyasar prasarana bagi nelayan dan pembudidaya',
-      'Kerusakan mangrove dan pencemaran langsung memotong pendapatan',
-      'Tata kelola perlu menjamin partisipasi dan keadilan akses',
+      'Diversifikasi usaha tekan kerentanan, bukan andalkan satu mata pencaharian',
+      'Wisata jadi alternatif, tapi rentan guncangan pasar dan lingkungan',
+      'Pemberdayaan butuh pengetahuan dan keterampilan, bukan cuma bantuan',
+      'Masyarakat mesti jadi subjek pembangunan, bukan cuma objek',
     ],
-    citations: [BUKU.bab3],
+    citations: [
+      { short: 'Suradja dkk. (2024)', text: 'Suradja dkk., Alternating Livelihoods and Coping with Shocks: An Examination of Coastal Tourism in Indonesia Amidst COVID-19, Marine Policy, 2024', url: 'https://www.sciencedirect.com/science/article/abs/pii/S0308597X24003774' },
+    ],
   },
   {
     type: 'evidence',
@@ -243,16 +249,16 @@ const SLIDES = [
     index: 4,
     section: 'Coastal Communities',
     presenter: 'Nurul Maghfirah Miftahul Jannah',
-    title: 'Ketergantungan dan Kerentanan',
-    stat: { value: '7 juta', label: 'Pekerjaan yang ditopang sektor perikanan, senilai US$26,9 miliar per tahun' },
-    statNote: 'Sektor ini juga memasok sekitar 50% kebutuhan protein hewani nasional.',
+    title: 'Subjek, Bukan Objek Pembangunan',
+    stat: { value: '5 desa', label: 'Desa pesisir yang diteliti soal ketahanan lewat diversifikasi ke wisata bahari saat pandemi' },
+    statNote: 'Di Pantai Semawang, Sanur, warga lokal berperan langsung dalam perencanaan dan pengelolaan wisata bahari, bukan cuma jadi penerima program.',
     caseTitle: 'Praktik di Indonesia',
     caseBody:
-      'Di WPP 713, 714, dan 718, ketergantungan tinggi pada perikanan berpadu dengan kapasitas adaptasi terbatas. Masyarakat pesisir di sana paling rentan terhadap perubahan iklim.',
+      'Di Makassar, hubungan pemerintah-masyarakat pesisir sudah berjalan, tapi keterlibatan sektor swasta masih terbatas — rekomendasinya perkuat forum multipihak dan pelatihan warga. Di Tamanroya, Jeneponto, pemberdayaan lewat wisata bahari butuh partisipasi, peningkatan kapasitas, dan dukungan infrastruktur, bukan sekadar bantuan.',
     citations: [
-      { text: 'Kaczan, D. dkk., Hot Water Rising, World Bank, 2023', url: 'https://doi.org/10.1596/40564' },
-      { text: 'UU No. 27 Tahun 2007 jo. UU No. 1 Tahun 2014', url: 'https://peraturan.bpk.go.id/Details/39911/uu-no-27-tahun-2007' },
-      { text: 'KKP, Ekonomi Biru Butuh UMKM yang Melek Keuangan', url: 'https://www.kkp.go.id/djpdskp/ekonomi-biru-butuh-umkm-yang-melek-keuangan-GM8L/detail.html' },
+      { text: 'Oktaviani & Suryasih, Partisipasi Masyarakat Lokal Dalam Pengelolaan Wisata Bahari Di Pantai Semawang, Jurnal Destinasi Pariwisata, 2018', url: 'https://ojs.unud.ac.id/index.php/destinasipar/article/download/46252/27955/' },
+      { text: 'Ramadhani dkk., Strengthening Multi-Stakeholder Partnerships for Sustainable Coastal Tourism Management: A Case Study from Makassar, Indonesia, Indonesian Journal of Marine Tourism, 2025', url: 'https://journal.poltekparmakassar.ac.id/index.php/marine-tourism/article/view/648' },
+      { text: 'Hamzah & Arifin, Building Coastal Community Economy Through Maritime Tourism in Tamanroya Village, Jeneponto Sub-District, Proceedings of IACS-IHCRGESND, 2024', url: 'https://www.ojs.literacyinstitute.org/index.php/iacseries/article/download/1533/497/4495' },
     ],
   },
 
