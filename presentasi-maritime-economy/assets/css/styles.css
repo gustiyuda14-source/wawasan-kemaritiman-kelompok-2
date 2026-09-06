@@ -81,6 +81,7 @@ h1, h2, h3, .display {
 .bg-base {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background:
     radial-gradient(ellipse 120% 80% at 15% 0%, var(--shelf) 0%, transparent 55%),
     radial-gradient(ellipse 100% 70% at 85% 100%, #0b3346 0%, transparent 60%),
@@ -90,6 +91,7 @@ h1, h2, h3, .display {
 /* 2. Aurora: dua gumpalan cahaya yang bergeser pelan. Hanya transform. */
 .bg-aurora {
   position: absolute;
+  z-index: 2;
   border-radius: 50%;
   filter: blur(90px);
   opacity: 0.5;
@@ -121,6 +123,7 @@ h1, h2, h3, .display {
    memancar dari satu titik justru yang membedakannya dari latar teknis generik. */
 .bg-sonar {
   position: absolute;
+  z-index: 3;
   inset: 0;
   background-image: repeating-radial-gradient(
     circle at 88% 92%,
@@ -136,6 +139,7 @@ h1, h2, h3, .display {
 /* 4. Partikel bioluminesen, digambar di kanvas */
 #particles {
   position: absolute;
+  z-index: 4;
   inset: 0;
   width: 100%;
   height: 100%;
@@ -145,9 +149,13 @@ h1, h2, h3, .display {
    body[data-section]), diberi ukuran dan tampil di kuadran kanan atas supaya
    tidak pernah tumpang tindih dengan judul, roster, atau kartu diagram.
    Cover/closing jadi aksen utama (opacity penuh); slide konsep/bukti jauh
-   lebih redup supaya cuma jadi tekstur, tidak bersaing dengan teks. */
+   lebih redup supaya cuma jadi tekstur, tidak bersaing dengan teks.
+   z-index tertinggi di antara lapisan latar (di atas gradien/aurora/sonar/
+   partikel/gelombang) supaya render 3D-nya tidak ketutup, tapi tetap di
+   bawah .deck (--z-content) jadi tidak pernah menimpa teks slide. */
 #accent3d {
   position: absolute;
+  z-index: 6;
   top: 0; right: 0;
   width: min(46vw, 620px);
   height: min(46vw, 620px);
@@ -162,6 +170,7 @@ body[data-slide-type='evidence'] #accent3d { opacity: 0.5; }
 /* 5. Gelombang, hanya untuk slide pembuka dan penutup */
 .bg-waves {
   position: absolute;
+  z-index: 5;
   left: 0; right: 0; bottom: 0;
   height: 34vh;
   opacity: 0;
@@ -229,34 +238,38 @@ body[data-slide-type='closing'] .bg-waves { opacity: 1; }
 .slide-inner--evidence { max-width: 1180px; }
 .slide-copy { min-width: 0; }
 
-/* Foto section menjadi siluet gradien penuh, bukan kartu foto yang berdiri
-   sendiri. Detail dipertahankan cukup untuk memberi konteks, bukan bersaing
-   dengan isi slide. */
+/* Foto section jadi kartu mandiri di pojok kanan-bawah slide, bukan siluet
+   full-bleed. Ditempatkan di bawah kotak render 3D (lihat #accent3d di
+   .bg) dan di atas chrome nav, supaya dua-duanya kelihatan sekaligus tanpa
+   tumpang tindih. */
 .visual-silhouette {
   position: absolute;
-  inset: 0 0 0 38%;
-  z-index: 0;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1;
+  width: clamp(100px, 9vw, 140px);
+  aspect-ratio: 3 / 4;
+  border-radius: var(--r-card);
   overflow: hidden;
   pointer-events: none;
-  opacity: 0.3;
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.25) 24%, #000 62%);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.25) 24%, #000 62%);
+  border: 1px solid var(--surface-line);
+  background: var(--surface);
+  backdrop-filter: var(--surface-blur);
+  -webkit-backdrop-filter: var(--surface-blur);
+  box-shadow: 0 24px 48px rgba(2, 10, 16, 0.5);
 }
 .visual-silhouette::after {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 72% 42%, rgba(95, 220, 232, 0.22), transparent 34%),
-    linear-gradient(90deg, var(--abyss), transparent 48%, rgba(4, 18, 28, 0.18));
+  background: linear-gradient(200deg, transparent 45%, rgba(4, 18, 28, 0.6));
 }
 .visual-silhouette img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: grayscale(1) contrast(1.8) brightness(0.38) sepia(1) hue-rotate(135deg) saturate(3.2) blur(0.4px);
-  mix-blend-mode: screen;
+  filter: saturate(1.05) contrast(1.08) brightness(0.95);
 }
 
 /* Label kecil di atas judul. Dipakai hemat, tidak di setiap slide. */
@@ -907,7 +920,7 @@ body[data-slide-type='closing'] .bg-waves { opacity: 1; }
 @media (max-width: 900px) {
   .slide-inner--concept { grid-template-columns: 1fr; gap: 1.8rem; }
   .slide-title { max-width: 100%; font-size: clamp(2.4rem, 8vw, 3.8rem); overflow-wrap: anywhere; }
-  .visual-silhouette { inset: 0; opacity: 0.18; }
+  .visual-silhouette { display: none; }
   .evidence-bento { grid-template-columns: 1fr; }
   .evidence-stat { grid-row: auto; min-height: 0; }
 }

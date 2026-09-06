@@ -294,22 +294,26 @@ const SLIDES = [
   },
 
   // 6. Made Adya Febriana Putri
+  // Sumber diperbarui ke jurnal <=10 tahun per rule dosen, lihat
+  // materi-narasi-jurnal-buku/06-maritime-tourism.md untuk narasi penuh.
   {
     type: 'concept',
     visual: VISUALS.tourism,
     index: 6,
     section: 'Maritime Tourism',
     presenter: 'Made Adya Febriana Putri',
-    title: 'Wisata Bahari sebagai Nilai',
+    title: 'Wisata Bahari, Nilai yang Belum Utuh',
     definition:
-      'Seluruh kegiatan rekreasi pada media kelautan atau bahari: pantai, pulau-pulau sekitarnya, serta kawasan lautan di permukaan maupun dasarnya. Nilainya datang dari jasa wisata, akomodasi, pemandu, dan konservasi.',
+      'Seluruh aktivitas rekreasi pada media laut dan pesisir yang nilainya terbentuk lewat rantai jasa: transportasi, akomodasi, pemandu, dan konservasi. Indikator kinerjanya masih dominan kunjungan dan belanja wisatawan, sementara emisi karbon, limbah laut, dan tekanan ekosistem jarang terukur.',
     keyPoints: [
-      'Daya tariknya terumbu karang, mangrove, pantai, dan budaya pesisir',
-      'Konservasi adalah modal ekonomi, bukan sekadar biaya',
-      'Pengelolaan perlu zonasi dan batas daya dukung kunjungan',
-      'Tanpa kendali kapasitas, wisata bahari berisiko overtourism',
+      'Nilai wisata bahari lahir dari rantai jasa, bukan cuma pemandangan',
+      'Emisi karbon dan limbah laut jarang masuk hitungan kinerja',
+      'Konservasi adalah modal ekonomi, bukan sekadar biaya tambahan',
+      'Kebocoran nilai ekonomi ke luar daerah jarang diukur',
     ],
-    citations: [BUKU.bab4],
+    citations: [
+      { short: 'Rasjid (2026)', text: 'Rasjid, R. D. A., Marine Tourism and Cruise Development in Indonesia: Perspective of Sustainable Environmental Accounting, Indonesia Journal of Marine Tourism, 2026', url: 'https://journal.poltekparmakassar.ac.id/index.php/marine-tourism/article/view/1615' },
+    ],
   },
   {
     type: 'evidence',
@@ -317,19 +321,24 @@ const SLIDES = [
     index: 6,
     section: 'Maritime Tourism',
     presenter: 'Made Adya Febriana Putri',
-    title: 'Konservasi yang Membayar Balik',
-    stat: { value: '48,29%', label: 'Tutupan karang hidup Raja Ampat 2024, naik dari 42,44% pada 2021' },
+    title: 'Modal Sosial di Balik Mandeh',
+    stat: { value: '2 juta', label: 'Wisatawan per tahun ke Kawasan Wisata Bahari Terpadu Mandeh, Sumatra Barat, sejak 2016' },
+    statNote:
+      'Transformasi dari desa pesisir terisolasi jadi destinasi wisata bahari terjadi dalam kurang dari 10 tahun.',
     caseTitle: 'Praktik di Indonesia',
     caseBody:
-      'Raja Ampat menghubungkan wisata selam dengan konservasi, disertai pembatasan aktivitas di Wayag. Secara nasional, 2024 mencatat 13,90 juta wisatawan mancanegara dan 1,02 miliar perjalanan wisatawan domestik.',
+      'Akses darat baru dibuka 2015-2018 lewat jalan sepanjang 41,08 km. Sekitar 100 perahu nelayan tradisional dikonversi jadi kapal wisata, dan pendapatan nelayan naik jadi Rp2-3 juta per hari saat musim liburan.',
     citations: [
-      { text: 'KKP, Wisata Bahari Raja Ampat Makin Mendunia, 2025', url: 'https://www.kkp.go.id/news/news-detail/kkp-berhasil-lindungi-populasi-pari-hiu-wisata-bahari-raja-ampat-makin-mendunia.html' },
-      { text: 'Kementerian Pariwisata, SISPARNAS, data 2024', url: 'https://sisparnas.kemenparekraf.go.id/p/54266' },
-      { text: 'Permen KP No. 26 Tahun 2024 tentang Kawasan Konservasi untuk Pariwisata Alam Perairan', url: 'https://jdih.kkp.go.id/Homedev/DetailPeraturan/6702' },
+      { text: 'Syafrini dkk., Innovation in Developing Isolated Coastal Villages into Sustainable Marine Tourism Villages in West Sumatra, Indonesia, Frontiers in Sociology, 2026', url: 'https://doi.org/10.3389/fsoc.2026.1754562' },
+      { text: 'Rasjid, Marine Tourism and Cruise Development in Indonesia, Indonesia Journal of Marine Tourism, 2026', url: 'https://journal.poltekparmakassar.ac.id/index.php/marine-tourism/article/view/1615' },
     ],
   },
 
   // 7. Gusti Putu Yuda Wirashana
+  // Sumber diperbarui ke jurnal <=10 tahun per rule dosen, lihat
+  // materi-narasi-jurnal-buku/07-shipping-logistics-shipbuilding.md untuk narasi
+  // penuh. Subtopik shipbuilding belum punya sumber jurnal pengganti, lihat
+  // catatan pemakaian di file itu.
   {
     type: 'concept',
     visual: VISUALS.shipping,
@@ -338,14 +347,16 @@ const SLIDES = [
     presenter: 'Gusti Putu Yuda Wirashana',
     title: 'Urat Nadi Ekonomi Kepulauan',
     definition:
-      'Pelayaran menghubungkan pulau dan pasar, logistik mengelola arus barang, galangan kapal merawat armada. Ketiganya menentukan biaya distribusi dan daya saing kepulauan.',
+      'Pelayaran menghubungkan pulau dan pasar, logistik mengelola arus barang, galangan kapal merawat armada. Digitalisasi pelabuhan mempercepat proses, tapi kepercayaan pengguna terhadap sistemnya masih jadi hambatan adopsi yang lebih besar dari soal fitur.',
     keyPoints: [
-      'Pelabuhan adalah simpul integrasi laut-darat dalam rantai pasok',
-      'Asas cabotage mewajibkan kapal domestik pada ekspor komoditas primer',
-      'Program Tol Laut menekan disparitas harga kawasan Barat-Timur',
+      'INAPORTNET pangkas waktu pelabuhan dari 1-3 hari jadi 30 menit',
+      'Indeks Kinerja Logistik Indonesia kalah dari Vietnam, Thailand, Malaysia',
+      'Kepercayaan pengguna, bukan fitur, jadi hambatan adopsi sistem digital',
       'Galangan kapal menopang kemandirian armada dan tenaga terampil',
     ],
-    citations: [BUKU.bab4],
+    citations: [
+      { short: 'Iman dkk. (2022)', text: 'Iman, Amanda & Angela, Digital Transformation for Maritime Logistics Capabilities Improvement: Cases in Indonesia, Marine Economics and Management, 2022', url: 'https://doi.org/10.1108/MAEM-01-2022-0002' },
+    ],
   },
   {
     type: 'evidence',
@@ -353,21 +364,25 @@ const SLIDES = [
     index: 7,
     section: 'Shipping, Logistics & Shipbuilding',
     presenter: 'Gusti Putu Yuda Wirashana',
-    title: 'Capaian Tol Laut 2024',
-    stat: { value: '37 rute', label: 'Rute subsidi Tol Laut sampai 2024, dari target 25 rute' },
+    title: 'Tol Laut, Efisiensi di Bawah 30%',
+    stat: { value: '<30%', label: 'Efisiensi program Tol Laut setelah delapan tahun berjalan' },
     statNote:
-      'Pada tahun yang sama tercatat 7 pelabuhan utama memenuhi standar, dengan rute pelayaran saling terhubung 27%.',
+      'Rute alternatif yang diusulkan untuk jalur T-3 memangkas jarak 51.148 mil laut dan menghemat 2 jam 18 menit per perjalanan.',
     caseTitle: 'Praktik di Indonesia',
     caseBody:
-      'Program Tol Laut melayani wilayah terpencil lewat trayek tetap bersubsidi, untuk memperbaiki distribusi barang dan menekan kesenjangan harga antarwilayah.',
+      'Integrasi pelayaran perintis dan Tol Laut masih lemah: utilisasi muatan balik cuma 31-33%, kapal subsidi banyak berlayar kosong di jalur pulang. Disparitas harga antarwilayah lebih banyak disebabkan premi asuransi tinggi ketimbang jarak tempuh.',
     citations: [
-      { text: 'Kementerian Perhubungan, Laporan Kinerja Tahun 2024', url: 'https://ppid.dephub.go.id/fileupload/informasi-berkala/20250516132623.LKIP_Kemenhub_2024.pdf' },
-      { text: 'UU No. 17 Tahun 2008 tentang Pelayaran', url: 'https://jdih.dephub.go.id/peraturan/detail?data=BIRXgzynMVj5Zo007DzuIi4KFw5WlEP8T4vQiLgyoCig8gi0Lz6n1We4jpLh4uJ4Z04uR56wikGnt4ZA1yWRpD5m49dA1sp8fcU49Y1ZSKk4dd7jmBrboqU2gKryjKzZoTo11Z6C3xK0RY4FMGACPCn5f5' },
-      { text: 'BPS, Statistik Transportasi Laut 2024', url: 'https://www.bps.go.id/id/publication/2025/12/01/fdc6de7c2b34aa9b109edcad/statistik-transportasi-laut-2024.html' },
+      { text: 'Djunarsjah dkk., Optimization of Marine Activities Based on Spatial Regional Planning and Geographical Approaches: A Case Study of Tol Laut Program in Indonesia, Indonesian Journal of Geography, 2025', url: 'https://doi.org/10.22146/ijg.95684' },
+      { text: 'Berlianto dkk., Integrasi Pelayaran Perintis (Pioneer Shipping) dan Tol Laut untuk Mengoptimalkan Return Cargo di Indonesia, OPTIMAL: Jurnal Ekonomi dan Manajemen, 2025', url: 'https://doi.org/10.55606/optimal.v5i2.6465' },
+      { text: 'Iman, Amanda & Angela, Digital Transformation for Maritime Logistics Capabilities Improvement: Cases in Indonesia, Marine Economics and Management, 2022', url: 'https://doi.org/10.1108/MAEM-01-2022-0002' },
     ],
   },
 
   // 8. Amanah Asri Estikawati
+  // Sumber diperbarui ke jurnal/buku <=10 tahun per rule dosen, lihat
+  // materi-narasi-jurnal-buku/08-blue-economy-indonesia.md untuk narasi penuh.
+  // Hamid dkk. (2026) sengaja tidak dipakai di sini: belum ketemu URL/DOI
+  // terverifikasi, lihat catatan pemakaian di file itu.
   {
     type: 'concept',
     visual: VISUALS.blueEconomy,
@@ -376,14 +391,17 @@ const SLIDES = [
     presenter: 'Amanah Asri Estikawati',
     title: 'Arah Ekonomi Biru Indonesia',
     definition:
-      'Pendekatan pembangunan yang menaikkan kesejahteraan dari sumber daya laut tanpa mengurangi kesehatan dan daya pulih ekosistemnya. Fokusnya keseimbangan manfaat ekonomi, sosial, dan lingkungan.',
+      'Model ekonomi yang memakai kekayaan maritim untuk kesejahteraan masyarakat tanpa mengorbankan keseimbangan ekosistem laut, dibangun di atas prinsip efisiensi sumber daya, nihil limbah, inklusi sosial, dan produksi melingkar.',
     keyPoints: [
-      'Prinsipnya: pemanfaatan berkelanjutan, bernilai tambah, inklusif, inovatif',
-      'Prioritasnya perikanan berkelanjutan, konservasi, wisata bahari, energi laut',
-      'Keberhasilan diukur lewat PDB maritim dan kawasan konservasi',
-      'Tantangannya perubahan iklim, IUU fishing, dan pencemaran plastik',
+      'Prinsipnya: efisiensi sumber daya, nihil limbah, inklusi sosial',
+      'Sistem produksi melingkar menyeimbangkan produksi dan regenerasi laut',
+      'Digitalisasi dan budidaya berkelanjutan mendorong sektor perikanan',
+      'Wisata bahari butuh daya tarik, akses, dan harga terjangkau',
     ],
-    citations: [BUKU.bab7, BUKU.bab3],
+    citations: [
+      BUKU.bab7,
+      { short: 'Widodo dkk. (2023)', text: 'Widodo dkk., Konsep Blue Economy Dalam Pengembangan Wilayah Pesisir dan Wisata Bahari di Indonesia, Jurnal Kewarganegaraan, 2023', url: 'https://journal.upy.ac.id/index.php/pkn/article/download/5548/3272/15440' },
+    ],
   },
   {
     type: 'evidence',
@@ -391,16 +409,15 @@ const SLIDES = [
     index: 8,
     section: 'Blue Economy Indonesia',
     presenter: 'Amanah Asri Estikawati',
-    title: 'Target 2045',
-    stat: { value: '15%', label: 'Target kontribusi PDB maritim pada 2045, dari 7,6% kondisi awal' },
-    statNote: 'Kontribusi lapangan kerja maritim ditargetkan naik menjadi 12%.',
+    title: 'Diversifikasi yang Menaikkan Pendapatan',
+    stat: { value: '20-30%', label: 'Kenaikan pendapatan nelayan lewat diversifikasi usaha ala blue economy' },
+    statNote: 'Diversifikasi mencakup budidaya, ekowisata, dan bioenergi dari rumput laut.',
     caseTitle: 'Praktik di Indonesia',
     caseBody:
-      'Peta Jalan Ekonomi Biru membagi implementasi 2023 sampai 2045 ke dalam lima fase: konsolidasi ekosistem, sumber pertumbuhan baru, diversifikasi, peningkatan daya saing, dan ekonomi biru berkelanjutan.',
+      'Strategi blue economy perikanan memadukan IoT, budidaya berkelanjutan, pengelolaan berbasis komunitas, dan pemantauan stok ikan berbasis satelit — mengurangi eksploitasi berlebih sekaligus menaikkan kesadaran konservasi di masyarakat pesisir.',
     citations: [
-      { text: 'Bappenas, Peta Jalan Ekonomi Biru Indonesia Edisi 2, 2024', url: 'https://www.bappenas.go.id/index.php/unit-kerja/0405' },
-      { text: 'Wuwung, McIlgorm & Voyer, Sustainable ocean development policies in Indonesia, 2024', url: 'https://doi.org/10.3389/fmars.2024.1401332' },
-      { text: 'UU No. 32 Tahun 2014 tentang Kelautan', url: 'https://peraturan.bpk.go.id/Details/38710/uu-no-32tahun-2014' },
+      { text: 'Nusantara dkk., Konseptual, Strategi, dan Implementasi Blue Economy dalam Pengelolaan Perikanan Laut dan Air Tawar, JELAWAT: Jurnal Ekonomi Laut dan Air Tawar, 2025', url: 'https://ejournal.utmj.ac.id/jelawat/article/view/916' },
+      { text: 'Widodo dkk., Konsep Blue Economy Dalam Pengembangan Wilayah Pesisir dan Wisata Bahari di Indonesia, Jurnal Kewarganegaraan, 2023', url: 'https://journal.upy.ac.id/index.php/pkn/article/download/5548/3272/15440' },
     ],
   },
 
