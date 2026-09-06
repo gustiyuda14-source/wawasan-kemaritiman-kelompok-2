@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maritime Economy | Kelompok 2 - Wawasan Kemaritiman</title>
+<meta name="description" content="Presentasi kelompok mata kuliah Maritime Insight (Wawasan Kemaritiman), Sub-CPMK-4: Maritime Economy. Magister Manajemen, Universitas Halu Oleo.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- Lapisan latar. Seluruhnya dekoratif, tidak menerima pointer. -->
+<div class="bg" aria-hidden="true">
+  <div class="bg-base"></div>
+
+  <div class="bg-aurora bg-aurora--a"></div>
+  <div class="bg-aurora bg-aurora--b"></div>
+  <div class="bg-sonar"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- Aksen 3D: bola wireframe berputar pelan, hanya tampil di pembuka dan
+       penutup. three-accent.js yang mengatur render loop dan visibilitasnya. -->
+  <canvas id="accent3d"></canvas>
+
+  <!-- Gelombang hanya tampil di slide pembuka dan penutup. -->
+  <div class="bg-waves">
+    <svg viewBox="0 0 2880 200" preserveAspectRatio="none">
+      <path class="wave-band wave-band--1" fill="rgba(43,147,164,0.20)"
+        d="M0,70 C240,30 480,110 720,70 C960,30 1200,110 1440,70 C1680,30 1920,110 2160,70 C2400,30 2640,110 2880,70 L2880,200 L0,200 Z"/>
+      <path class="wave-band wave-band--2" fill="rgba(95,220,232,0.13)"
+        d="M0,95 C300,55 600,135 900,95 C1200,55 1440,135 1440,95 C1740,55 2040,135 2340,95 C2640,55 2880,135 2880,95 L2880,200 L0,200 Z"/>
+      <path class="wave-band wave-band--3" fill="rgba(10,44,64,0.55)"
+        d="M0,125 C360,90 720,160 1080,125 C1260,108 1350,116 1440,125 C1800,90 2160,160 2520,125 C2700,108 2790,116 2880,125 L2880,200 L0,200 Z"/>
+    </svg>
+  </div>
+</div>
+
+<!-- Progress -->
+<div class="progress" role="progressbar" aria-label="Kemajuan presentasi">
+  <div class="progress-fill"></div>
+</div>
+
+<!-- Area klik maju dan mundur -->
+<button class="tap-zone tap-zone--prev" aria-label="Slide sebelumnya" tabindex="-1"></button>
+<button class="tap-zone tap-zone--next" aria-label="Slide berikutnya" tabindex="-1"></button>
+
+<!-- Slide, diagram infografis, dan siluet gradien dirender oleh deck.js -->
+<main class="deck" id="deck"></main>
+
+<!-- Identitas slide dan navigasi -->
+<div class="chrome">
+  <div class="chrome-id">
+    <div class="chrome-section"></div>
+    <div class="chrome-presenter"></div>
+  </div>
+  <nav class="chrome-nav" aria-label="Navigasi slide">
+    <span class="counter" aria-live="polite"></span>
+    <button class="nav-btn nav-btn--prev" aria-label="Slide sebelumnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M15 5 L8 12 L15 19"/>
+      </svg>
+    </button>
+    <button class="nav-btn nav-btn--next" aria-label="Slide berikutnya">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 5 L16 12 L9 19"/>
+      </svg>
+    </button>
+  </nav>
+</div>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/deck.js"></script>
+
+<!-- Three.js hanya untuk aksen 3D di slide pembuka dan penutup. Dimuat paling
+     akhir dan lewat CDN cdnjs, jadi kalau jaringan lambat, deck utama sudah
+     interaktif duluan tanpa menunggunya. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/three-accent.js"></script>
+</body>
+</html>
