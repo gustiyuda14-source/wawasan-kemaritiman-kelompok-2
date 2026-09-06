@@ -269,6 +269,10 @@ const SLIDES = [
   },
 
   // 5. Sityama Munawar Dewi
+  // Sumber diperbarui ke jurnal <=10 tahun per rule dosen, lihat
+  // materi-narasi-jurnal-buku/05-fisheries-aquaculture.md untuk narasi penuh.
+  // Sumber jurnal yang ketemu belum ada studi kasus Indonesia -- evidence
+  // pakai pembanding Bangladesh, lihat catatan pemakaian di file itu.
   {
     type: 'concept',
     visual: VISUALS.fisheries,
@@ -277,14 +281,17 @@ const SLIDES = [
     presenter: 'Sityama Munawar Dewi',
     title: 'Perikanan Tangkap dan Budidaya',
     definition:
-      'Perikanan tangkap menangkap ikan di laut dan perairan umum. Budidaya (akuakultur) mengembangbiakkan organisme air meniru habitat aslinya. Keduanya menopang pangan, kerja, dan ekspor.',
+      'Perikanan tangkap memanfaatkan sumber daya ikan alami di laut; akuakultur membudidayakan organisme perairan secara terencana. Keduanya menciptakan rantai ekonomi luas, dari produksi dan pengolahan sampai perdagangan domestik dan internasional.',
     keyPoints: [
-      'Perikanan tangkap harus berbasis stok ikan dan pengawasan',
-      'Budidaya perlu menjaga kualitas air, pakan, dan limbah',
-      'Hilirisasi lewat rantai dingin menaikkan nilai tambah',
-      'Moratorium izin dan penenggelaman kapal menekan IUU fishing',
+      'Pengelolaan perikanan soal ekonomi juga, bukan cuma biologi stok',
+      'Akuakultur butuh teknologi, infrastruktur, pembiayaan, pasar, dan tata kelola',
+      'Blue economy: produksi naik tanpa merusak kesehatan ekosistem',
+      'Hilirisasi ubah ikan segar jadi produk bernilai tambah tinggi',
     ],
-    citations: [BUKU.bab4, BUKU.bab5],
+    citations: [
+      { short: 'Thébaud dkk. (2023)', text: 'Thébaud dkk., Integrating Economics into Fisheries Science and Advice, ICES Journal of Marine Science, 2023', url: 'https://academic.oup.com/icesjms/article/80/4/647/7036153' },
+      { short: 'AftabUddin dkk. (2021)', text: 'AftabUddin dkk., On the Potential and Constraints of Mariculture Development in Bangladesh, Aquaculture International, 2021', url: 'https://doi.org/10.1007/s10499-020-00643-9' },
+    ],
   },
   {
     type: 'evidence',
@@ -292,16 +299,16 @@ const SLIDES = [
     index: 5,
     section: 'Fisheries & Aquaculture',
     presenter: 'Sityama Munawar Dewi',
-    title: 'Produksi dan Diversifikasi',
-    stat: { value: '6,37 juta ton', label: 'Produksi ikan budidaya 2024, naik 13,64% dari tahun sebelumnya' },
-    statNote: 'Produksi rumput laut pada periode yang sama mencapai 10,80 juta ton.',
-    caseTitle: 'Praktik di Indonesia',
+    title: 'Ekonomi Biru dan Lapangan Kerja',
+    stat: { value: '31 juta', label: 'Lapangan kerja global yang ditopang ekonomi biru, termasuk perikanan dan akuakultur' },
+    statNote: 'Pembiayaan berkelanjutan sektor kelautan baru berdampak nyata dalam jangka panjang, bukan instan.',
+    caseTitle: 'Pembanding: Mariculture Bangladesh',
     caseBody:
-      'Model budidaya rumput laut di Wakatobi seluas 50 hektare menghasilkan nilai produksi Rp1,09 miliar. Ini menunjukkan peluang diversifikasi ekonomi pesisir di luar perikanan tangkap.',
+      'Bangladesh menghadapi kendala serupa dalam mengembangkan akuakultur laut: pemilihan lokasi, produksi benih, formulasi pakan, tenaga terampil, modal awal, dan logistik. Spesies berpotensi tinggi seperti kerang dan tiram punya nilai ekspor besar, tapi sebarannya di alam yang tidak merata membatasi eksploitasi skala besar.',
     citations: [
-      { text: 'KKP, Produksi Perikanan Budi Daya Naik 13,6% di 2024', url: 'https://kkp.go.id/news/news-detail/menteri-trenggono-berhasil-tingkatkan-produksi-perikanan-budi-daya-136-di-2024-vQq0.html' },
-      { text: 'BPS, Volume dan Nilai Produksi Perikanan Tangkap 2024', url: 'https://www.bps.go.id/id/statistics-table/3/U2k4d1MwcFZjRGhSVVRKaWRHRm5Temw1VURJeFp6MDkjMw%3D%3D/volume-produksi-dan-nilai-produksi-perikanan-tangkap-menurut-provinsi-dan-jenis-penangkapan--2024.html' },
-      { text: 'KKP, Kelautan dan Perikanan dalam Angka 2024', url: 'https://perpustakaan.kkp.go.id/knowledgerepository/index.php?id=1074693&p=show_detail' },
+      { text: 'Nham & Ha, The Role of Financial Development in Improving Marine Living Resources Towards Sustainable Blue Economy, Journal of Sea Research, 2023', url: 'https://doi.org/10.1016/j.seares.2023.102417' },
+      { text: 'AftabUddin dkk., On the Potential and Constraints of Mariculture Development in Bangladesh, Aquaculture International, 2021', url: 'https://doi.org/10.1007/s10499-020-00643-9' },
+      { text: 'Thébaud dkk., Integrating Economics into Fisheries Science and Advice, ICES Journal of Marine Science, 2023', url: 'https://academic.oup.com/icesjms/article/80/4/647/7036153' },
     ],
   },
 
